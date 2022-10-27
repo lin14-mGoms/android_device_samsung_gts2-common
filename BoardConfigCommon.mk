@@ -6,6 +6,10 @@ TARGET_SLSI_VARIANT := cm
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Get rid of 'kernel is not seandroid enforcing' boot message
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
+
 # Extracted with libbootimg
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
